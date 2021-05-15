@@ -1,0 +1,314 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body{
+  width: 100%; 
+
+}
+header{
+  
+  background: url(../img/main-screen__bgc.svg)  no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  width: 100%;
+  height: 830px;
+ border: 0.01px solid black;
+
+}
+.header_flex{
+
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+max-width: 93%;
+
+  height:20px;
+
+align-items: center;
+
+
+}
+.back_header{
+  border: 1px solid black;
+  height: 72px;
+  background-color: black;
+  position: sticky;
+top:0;
+
+}
+
+
+.logo_header{
+  
+  margin-right: 5%;
+}
+
+
+.header_flex_nav{
+ 
+height: 24px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+
+}
+  
+
+.header_flex_nav a{
+float: left;
+color: #FFFFFF;
+text-decoration: none;
+border-radius: 5px;
+ padding: 2px;
+  display: block;
+
+
+
+}
+
+.header_flex_nav .icon{
+  display: none;
+
+
+}
+@media screen and (max-width: 1050px) {
+.header_flex_nav a{display: none;}
+.header_flex_nav a.icon{
+    float: right;
+    display: block;
+    position: absolute;}
+    .header_flex_nav {
+      flex-direction:column;
+      
+     
+
+    }
+    .header_flex_nav nav:first-child{
+  padding-left: 55px;
+} 
+.header_flex_nav nav{
+  background-color: black;
+  width: 70%;
+
+}
+}
+
+@media screen and (max-width: 1050px) {
+  .header_flex_nav.responsive {position: relative;}
+  .header_flex_nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header_flex_nav.responsive a {
+    
+    float: none;
+    display: block;
+    
+  }
+}
+
+
+.header_flex_nav a:hover{
+ background: linear-gradient(21deg, #dd03e4, #5611ec);
+ 
+}
+
+.header_flex_nav nav{
+  margin-left: 56px;
+}
+.header_flex_nav nav:first-child{
+  margin-left: 0px;
+} 
+.header_flex_nav{
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login{
+  margin-left: 1%;
+  width: 183px;
+  min-width:120px;
+  height: 42px;
+  border-radius: 30px;
+   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+color:#fff;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+}
+.login:hover{
+ opacity: 0.8;
+}
+.h1_time{
+  margin-top: 198px;
+  width: 47.5%;
+
+  margin-left: 13.5%;
+  min-width: 340px;
+}
+h1{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 140%;
+color: #FFFFFF;
+  
+}
+.time{
+  display: flex;
+
+  margin-top: 50px;
+}
+.time_block{
+  width: 102px;
+  height: 112px;
+  background-color: #121212;
+  margin-left: 30px;
+ 
+  text-align: center;
+}
+.time_block:first-child{
+  margin: 0px; 
+}
+.days ,.hours ,.minutes ,.seconds{
+  margin-top: 20px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 140%;
+
+color: #FFFFFF;
+}
+.week{
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+opacity: 0.4;
+}
+@media screen and (max-width: 1050px){
+  h1{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .time{
+    flex-wrap: wrap;
+  }
+  .time_block:first-child{
+  margin-left:  30px;
+  margin-top: 30px;
+
+    }
+    .time_block{
+      margin-top: 30px;
+    }
+    .time{
+      margin: 0px;
+    }
+
+}
